@@ -16,11 +16,12 @@ data class Product(
     val description:String? = null,
     @SerialName("image")
     val image:String? = null,
-//    val rating:Rating
+    @SerialName("rating")
+    val rating:Rating
 )
 
 @Serializable
 data class Rating(
-    val rate:Int = 0,
+    val rate:Float = 0.0f,
     val count:Int = 0
 )

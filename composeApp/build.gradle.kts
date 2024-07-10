@@ -32,6 +32,7 @@ kotlin {
         commonMain.dependencies {
             api(libs.image.loader)
             implementation(libs.mvvm.core) // only ViewModel, EventsDispatcher, Dispatchers.UI
+            implementation("io.ktor:ktor-client-logging:2.3.7")
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.content.negotiation)
