@@ -31,6 +31,8 @@ kotlin {
         }
         commonMain.dependencies {
             api(libs.image.loader)
+            implementation("androidx.compose.material3:material3:1.3.0-beta04")
+
             implementation(libs.mvvm.core) // only ViewModel, EventsDispatcher, Dispatchers.UI
             implementation("io.ktor:ktor-client-logging:2.3.7")
             implementation(libs.kotlinx.coroutines.core)
@@ -87,6 +89,10 @@ android {
     dependencies {
         debugImplementation(compose.uiTooling)
     }
+}
+dependencies {
+implementation(libs.androidx.material)
+    //    implementation(libs.androidx.material3.android)
 }
 
 compose.desktop {
