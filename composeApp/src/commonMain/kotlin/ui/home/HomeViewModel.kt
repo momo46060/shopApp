@@ -1,7 +1,8 @@
-package ui
+package ui.home
 
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import data.Product
-import dev.icerock.moko.mvvm.viewmodel.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
