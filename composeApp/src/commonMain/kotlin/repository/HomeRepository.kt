@@ -15,5 +15,6 @@ class HomeRepository {
 
     fun getProducts2() = flow {
         emit(getProducts())
+
     }
 }
